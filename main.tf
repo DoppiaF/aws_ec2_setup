@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "macchina_prova_build" {
   ami           = "ami-052387465d846f3fc"  # linux free tier
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
 
   tags = {
     Name = "macchina_prova_build"
